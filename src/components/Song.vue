@@ -1,11 +1,11 @@
 <template>
   <van-row>
     <!--弹唱日期-->
-    <van-col span="4">{{ performanceDate }}</van-col>
+    <van-col span="3">{{ performanceDate }}</van-col>
     <!--歌名-->
-    <van-col span="4">{{ songName }}</van-col>
+    <van-col span="6">{{ songName }}</van-col>
     <!--翻唱歌手列表-->
-    <van-col span="4">
+    <van-col span="3">
       <van-tag
         type="primary"
         size="large"

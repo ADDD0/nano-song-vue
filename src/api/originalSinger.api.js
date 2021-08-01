@@ -1,12 +1,12 @@
 import { axios } from "../main";
 import { Toast } from "vant";
 
-// 绑定歌曲集合与歌手
+// 关联歌曲集合与歌手
 const bindSongCollectionAndSinger = async (songTitle, singerName) => {
   return await new Promise(() => {
     axios({
       method: "post",
-      url: "/originalSinger/bind",
+      url: "/originalSinger/relate",
       data: {
         songTitle: songTitle,
         singerName: singerName,
