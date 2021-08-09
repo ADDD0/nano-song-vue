@@ -16,7 +16,7 @@ const queryPerformanceDate = async (performanceDate) => {
         // 访问成功
         if (200 === responseEntity.status) {
           // 传递查询到的数据
-          resolve(responseEntity.data.querySongResponseResourceArrayList);
+          resolve(responseEntity.data.returnSongBeanArrayList);
         }
       })
       .catch((err) => {
@@ -42,7 +42,7 @@ const querySongCollectionId = async (songCollectionId) => {
         // 访问成功
         if (200 === responseEntity.status) {
           // 传递查询到的数据
-          resolve(responseEntity.data.querySongResponseResourceArrayList);
+          resolve(responseEntity.data.returnSongBeanArrayList);
         }
       })
       .catch((err) => {
